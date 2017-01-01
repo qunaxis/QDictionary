@@ -7,7 +7,7 @@ import config from './cfg.json'
 
 let apiRoutes = express.Router();
 
-apiRoutes.post('/auth', (req, res) => {
+apiRoutes.post('/signin', (req, res) => {
     db.findUser({ name: req.body.name }).then(user => {
         if (!user) {
             res.json({ status: false, message: 'Неверное имя пользователя' });
