@@ -1,0 +1,15 @@
+{
+    "db": {
+        "host": "192.168.0.2",
+        "port": "27017",
+        "name": "qd"
+    },
+    "server": {
+        "port": "80",
+        "secret": "ilovealena"
+    },
+    "api": {
+        "url": "https://dictionary.yandex.net/api/v1/dicservice.json/lookup",
+        "key": "dict.1.1.20170101T175608Z.b39c9cf89bc114da.77d769fbe022b1fa9a73cc3f64c970096a9cd52d"
+    }
+}
