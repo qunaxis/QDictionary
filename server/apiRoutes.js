@@ -32,16 +32,17 @@ apiRoutes.post('/signup', (req, res) => {
     db.findUser(user).then(data => {
         if(data) {
             res.json({
-                status: false
+                status: false,
+                message: 'Login is busy'
             });
             console.log(`Wrong try to signup`);
         } else {
-            db.createUser(user).then(data => {
+            db.createUser(user).then(user => {
                 res.json({
-                    data,
+                    user,
                     status: true
                 });
-                console.log(`User ${data.name} has been signuped`);
+                console.log(`User ${user.name} has been signuped`);
             });
         }
     });

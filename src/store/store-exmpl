@@ -1,0 +1,31 @@
+app: {
+    user: {
+        isLoggined: boolean
+        name: '',
+        token: ''
+    },
+    dictionaries: [
+        dic1: {
+            phrase1: {
+                answer from server
+            },
+            phrase2: {
+                answer from server
+            },
+            phrase3: {
+                answer from server
+            }
+        },
+        dic2: {
+            phrase1: {
+                answer from server
+            },
+            phrase2: {
+                answer from server
+            },
+            phrase3: {
+                answer from server
+            }
+        }
+    ]
+}
